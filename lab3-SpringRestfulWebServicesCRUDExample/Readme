@@ -1,0 +1,45 @@
+To GET all countries:
+=============
+
+http://localhost:8080/lab3-SpringRestfulWebServicesCRUDExample/countries
+
+
+To GET country by id:
+=============
+
+http://localhost:8080/lab3-SpringRestfulWebServicesCRUDExample/country/<id>
+
+To add a new country (POST):
+===================
+
+url : http://localhost:8080/lab3-SpringRestfulWebServicesCRUDExample/countries
+Content-Type: application/json
+
+body:
+{
+    "countryName": "US",
+    "population": 700000
+}
+
+
+To update a country (PUT)
+=================
+
+url : http://localhost:8080/lab3-SpringRestfulWebServicesCRUDExample/countries
+
+Content-Type: application/json
+
+body:
+{
+    "id": 7,
+    "countryName": "US",
+    "population": 777000
+}
+
+To delete a country (DELETE)
+==================
+
+http://localhost:8080/lab3-SpringRestfulWebServicesCRUDExample/country/<id>
+
+
+
